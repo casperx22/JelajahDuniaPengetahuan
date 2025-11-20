@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jelajah Dunia Pengetahuan 🧭</title>
+    <link rel="stylesheet" href="style-adventure.css">
+</head>
+<body>
+
+    <div id="game-ui">
+        <h1>🧭 Jelajah Dunia Pengetahuan</h1>
+        <div class="progress-bar-global">Progres Total: <span id="global-progress">0%</span></div>
+    </div>
+
+    <div id="adventure-map-container">
+        <div id="adventure-map">
+            
+            <div class="island math-island" data-subject="math">
+                <h2>Pulau Angka</h2>
+                <div class="level level-1" data-level="1" data-status="unlocked">Tantangan 1: Hitung Cepat</div>
+                <div class="level level-2" data-level="2" data-status="locked">Tantangan 2: Pecahan Misteri</div>
+            </div>
+
+            <div class="island science-island" data-subject="science">
+                <h2>Benua Eksperimen</h2>
+                <div class="level level-3" data-level="3" data-status="unlocked">Level 3: Siklus Air</div>
+                <div class="level level-4" data-level="4" data-status="completed">Level 4: Gaya Magnet</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="quiz-modal" class="hidden">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3 id="modal-title"></h3>
+            <p>Ini adalah isi kuis interaktif untuk level tersebut.</p>
+            <button id="complete-level-btn">Selesaikan & Klaim Hadiah!</button>
+        </div>
+    </div>
+
+    <script src="script-adventure.js"></script>
+</body>
+</html>
